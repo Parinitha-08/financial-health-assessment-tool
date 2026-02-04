@@ -6,10 +6,10 @@ from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 
-from backend.analysis.metrics import calculate_metrics
-from backend.i18n.translator import translate_metrics
-from backend.ai.insights import generate_ai_insights
-from backend.report import generate_pdf_report
+from analysis.metrics import calculate_metrics
+from i18n.translator import translate_metrics
+from ai.insights import generate_ai_insights
+from report import generate_pdf_report
 from fastapi.responses import FileResponse
 
 
